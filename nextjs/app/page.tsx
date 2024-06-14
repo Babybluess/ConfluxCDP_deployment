@@ -6,8 +6,7 @@ import type { NextPage } from "next";
 import { useAccount } from "wagmi";
 import { BugAntIcon, MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import { Address, Balance } from "~~/components/scaffold-eth";
-import { InputBase } from "~~/components/scaffold-eth";
-import { useScaffoldContract, useScaffoldContractRead, useScaffoldContractWrite } from "~~/hooks/scaffold-eth/index";
+import { useScaffoldContract, useScaffoldContractWrite } from "~~/hooks/scaffold-eth/index";
 
 const Home: NextPage = () => {
   const { address: connectedAddress } = useAccount();
